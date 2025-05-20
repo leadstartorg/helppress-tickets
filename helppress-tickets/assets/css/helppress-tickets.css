@@ -1,0 +1,392 @@
+/**
+ * HelpPress Tickets Styles
+ */
+
+/* Global Styles */
+.helppress-tickets {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.helppress-tickets h1, 
+.helppress-tickets h2, 
+.helppress-tickets h3, 
+.helppress-tickets h4, 
+.helppress-tickets h5, 
+.helppress-tickets h6 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.helppress-tickets .badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+.helppress-tickets .form-control:focus,
+.helppress-tickets .form-select:focus,
+.helppress-tickets .btn:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Submit Ticket Form */
+.helppress-tickets-form label {
+    font-weight: 500;
+}
+
+.helppress-tickets-form .wp-editor-container {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.helppress-tickets-form .wp-editor-tabs {
+    margin-bottom: 0;
+}
+
+/* Ticket List */
+.helppress-tickets-list table {
+    margin-bottom: 1.5rem;
+}
+
+.helppress-tickets-list th {
+    font-weight: 500;
+    background-color: #f8f9fa;
+}
+
+.helppress-tickets-list .pagination {
+    margin-top: 1.5rem;
+}
+
+.helppress-tickets-list .pagination .page-link {
+    color: #0d6efd;
+}
+
+.helppress-tickets-list .pagination .page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+}
+
+/* Admin Ticket List */
+.helppress-tickets-admin-list .dashicons {
+    vertical-align: middle;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    margin-top: -2px;
+}
+
+/* Single Ticket */
+.helppress-single-ticket .helppress-ticket-meta {
+    margin-top: 0.5rem;
+}
+
+.helppress-single-ticket .card {
+    margin-bottom: 1.5rem;
+    border-color: #dee2e6;
+}
+
+.helppress-single-ticket .card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0.75rem 1rem;
+}
+
+.helppress-single-ticket .card-body {
+    padding: 1.25rem;
+}
+
+.helppress-single-ticket table th {
+    width: 40%;
+    font-weight: 500;
+}
+
+.helppress-single-ticket .dashicons {
+    vertical-align: middle;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    margin-top: -2px;
+}
+
+/* Ticket Replies */
+.helppress-ticket-replies .card {
+    margin-bottom: 1rem;
+}
+
+.helppress-reply-support .card-header {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.helppress-reply-customer .card-header {
+    background-color: #f8f9fa;
+}
+
+.helppress-reply-time {
+    opacity: 0.8;
+    font-size: 0.875rem;
+}
+
+/* Ticket Status Form */
+.helppress-ticket-status-form .card {
+    margin-bottom: 1.5rem;
+}
+
+.helppress-ticket-status-form .spinner-border {
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem 0;
+}
+
+/* Status and Priority Colors */
+.badge.bg-info.text-dark {
+    background-color: #0dcaf0 !important;
+}
+
+.badge.bg-primary {
+    background-color: #0d6efd !important;
+}
+
+.badge.bg-success {
+    background-color: #198754 !important;
+}
+
+.badge.bg-secondary {
+    background-color: #6c757d !important;
+}
+
+.badge.bg-warning.text-dark {
+    background-color: #ffc107 !important;
+}
+
+.badge.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+/* Responsive Table */
+@media (max-width: 767.98px) {
+    .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .helppress-tickets-list th,
+    .helppress-tickets-admin-list th {
+        white-space: nowrap;
+    }
+}
+
+/* Bootstrap 5 compatibility */
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-outline-primary {
+    color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* WordPress Admin Bar Compatibility */
+.admin-bar .helppress-tickets {
+    margin-top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+    .admin-bar .helppress-tickets {
+        margin-top: 46px;
+    }
+}
+
+/**
+ * Additional styles for helppress-tickets.css
+ */
+
+/* AJAX Loading Styles */
+.loading-overlay {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 123, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #0d6efd;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Make sure ticket view is full width */
+.helppress-single-ticket .row {
+    width: 100%;
+    margin: 0;
+}
+
+/* Social sharing styles for public tickets */
+.helppress-ticket-sharing {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    background-color: #f8f9fa;
+}
+
+.helppress-ticket-sharing .btn {
+    margin-right: 5px;
+}
+
+/* Fix for ticket comments - ensure they're enabled by default */
+.helppress-single-ticket .comments-area {
+    margin-top: 30px;
+}
+
+.helppress-single-ticket .comment-form textarea {
+    width: 100%;
+}
+
+/**
+ * HelpPress Tickets CSS
+ */
+
+/* Ticket lists */
+.helppress-tickets-list,
+.helppress-tickets-admin-list {
+    margin-bottom: 40px;
+}
+
+.helppress-tickets-filter {
+    margin-bottom: 20px;
+}
+
+.helppress-tickets-filter .btn-group {
+    margin-bottom: 10px;
+}
+
+.helppress-tickets-filter form {
+    margin-bottom: 15px;
+}
+
+/* Ticket form */
+.helppress-tickets-form .form-text {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+/* Single ticket */
+.helppress-single-ticket .card {
+    margin-bottom: 20px;
+}
+
+.helppress-ticket-meta {
+    margin-top: 10px;
+}
+
+/* Replies */
+.helppress-reply-form {
+    margin-top: 30px;
+}
+
+.helppress-reply-customer {
+    border-left: 4px solid #f8f9fa;
+}
+
+.helppress-reply-support {
+    border-left: 4px solid #0d6efd;
+}
+
+.helppress-reply-time {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+/* Ajax loader */
+.helppress-tickets-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Status badges */
+.badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+/* Ticket attachments */
+.helppress-ticket-attachment {
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .helppress-tickets table.table {
+        font-size: 0.85rem;
+    }
+    
+    .helppress-tickets .btn-sm {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+    }
+    
+    .helppress-tickets-header {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    
+    .helppress-tickets-header .btn-group {
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    .helppress-tickets-header .btn-group .btn {
+        flex: 1;
+    }
+}
