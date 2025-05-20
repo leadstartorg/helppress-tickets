@@ -84,34 +84,6 @@ if (!defined('ABSPATH')) {
                         </tbody>
                     </table>
                 </div>
-                <?php if ($tickets_all->max_num_pages > 1): ?>
-                    <div class="helppress-tickets-pagination mt-4">
-                        <?php
-                        $big = 999999999;
-                        $pagination = paginate_links(array(
-                            'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
-                            'format' => '?paged=%#%',
-                            'current' => max(1, get_query_var('paged')),
-                            'total' => $tickets_all->max_num_pages,
-                            'prev_text' => '&laquo; ' . esc_html__('Previous', 'helppress-tickets'),
-                            'next_text' => esc_html__('Next', 'helppress-tickets') . ' &raquo;',
-                            'type' => 'list',
-                            'show_all' => false,
-                            'end_size' => 1,
-                            'mid_size' => 2,
-                            'add_args' => array()
-                        ));
-                        
-                        // Convert to Bootstrap pagination
-                        $pagination = str_replace('page-numbers', 'page-link', $pagination);
-                        $pagination = str_replace('<li>', '<li class="page-item">', $pagination);
-                        $pagination = str_replace('<li class="page-item current">', '<li class="page-item active">', $pagination);
-                        $pagination = str_replace('<ul class="page-link">', '<ul class="pagination justify-content-center">', $pagination);
-                        
-                        echo wp_kses_post($pagination);
-                        ?>
-                    </div>
-                <?php endif; ?>
             <?php else: ?>
                 <div class="alert alert-info"><?php esc_html_e('No tickets found.', 'helppress-tickets'); ?></div>
             <?php endif; ?>
@@ -140,34 +112,6 @@ if (!defined('ABSPATH')) {
                         </tbody>
                     </table>
                 </div>
-                <?php if ($tickets_all->max_num_pages > 1): ?>
-                    <div class="helppress-tickets-pagination mt-4">
-                        <?php
-                        $big = 999999999;
-                        $pagination = paginate_links(array(
-                            'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
-                            'format' => '?paged=%#%',
-                            'current' => max(1, get_query_var('paged')),
-                            'total' => $tickets_all->max_num_pages,
-                            'prev_text' => '&laquo; ' . esc_html__('Previous', 'helppress-tickets'),
-                            'next_text' => esc_html__('Next', 'helppress-tickets') . ' &raquo;',
-                            'type' => 'list',
-                            'show_all' => false,
-                            'end_size' => 1,
-                            'mid_size' => 2,
-                            'add_args' => array()
-                        ));
-                        
-                        // Convert to Bootstrap pagination
-                        $pagination = str_replace('page-numbers', 'page-link', $pagination);
-                        $pagination = str_replace('<li>', '<li class="page-item">', $pagination);
-                        $pagination = str_replace('<li class="page-item current">', '<li class="page-item active">', $pagination);
-                        $pagination = str_replace('<ul class="page-link">', '<ul class="pagination justify-content-center">', $pagination);
-                        
-                        echo wp_kses_post($pagination);
-                        ?>
-                    </div>
-                <?php endif; ?>
             <?php else: ?>
                 <div class="alert alert-info"><?php esc_html_e('No open tickets found.', 'helppress-tickets'); ?></div>
             <?php endif; ?>
@@ -196,34 +140,6 @@ if (!defined('ABSPATH')) {
                         </tbody>
                     </table>
                 </div>
-                <?php if ($tickets_all->max_num_pages > 1): ?>
-                    <div class="helppress-tickets-pagination mt-4">
-                        <?php
-                        $big = 999999999;
-                        $pagination = paginate_links(array(
-                            'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
-                            'format' => '?paged=%#%',
-                            'current' => max(1, get_query_var('paged')),
-                            'total' => $tickets_all->max_num_pages,
-                            'prev_text' => '&laquo; ' . esc_html__('Previous', 'helppress-tickets'),
-                            'next_text' => esc_html__('Next', 'helppress-tickets') . ' &raquo;',
-                            'type' => 'list',
-                            'show_all' => false,
-                            'end_size' => 1,
-                            'mid_size' => 2,
-                            'add_args' => array()
-                        ));
-                        
-                        // Convert to Bootstrap pagination
-                        $pagination = str_replace('page-numbers', 'page-link', $pagination);
-                        $pagination = str_replace('<li>', '<li class="page-item">', $pagination);
-                        $pagination = str_replace('<li class="page-item current">', '<li class="page-item active">', $pagination);
-                        $pagination = str_replace('<ul class="page-link">', '<ul class="pagination justify-content-center">', $pagination);
-                        
-                        echo wp_kses_post($pagination);
-                        ?>
-                    </div>
-                <?php endif; ?>
             <?php else: ?>
                 <div class="alert alert-info"><?php esc_html_e('No tickets in progress found.', 'helppress-tickets'); ?></div>
             <?php endif; ?>
@@ -251,34 +167,6 @@ if (!defined('ABSPATH')) {
                         </tbody>
                     </table>
                 </div>
-                <?php if ($tickets_all->max_num_pages > 1): ?>
-                    <div class="helppress-tickets-pagination mt-4">
-                        <?php
-                        $big = 999999999;
-                        $pagination = paginate_links(array(
-                            'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
-                            'format' => '?paged=%#%',
-                            'current' => max(1, get_query_var('paged')),
-                            'total' => $tickets_all->max_num_pages,
-                            'prev_text' => '&laquo; ' . esc_html__('Previous', 'helppress-tickets'),
-                            'next_text' => esc_html__('Next', 'helppress-tickets') . ' &raquo;',
-                            'type' => 'list',
-                            'show_all' => false,
-                            'end_size' => 1,
-                            'mid_size' => 2,
-                            'add_args' => array()
-                        ));
-                        
-                        // Convert to Bootstrap pagination
-                        $pagination = str_replace('page-numbers', 'page-link', $pagination);
-                        $pagination = str_replace('<li>', '<li class="page-item">', $pagination);
-                        $pagination = str_replace('<li class="page-item current">', '<li class="page-item active">', $pagination);
-                        $pagination = str_replace('<ul class="page-link">', '<ul class="pagination justify-content-center">', $pagination);
-                        
-                        echo wp_kses_post($pagination);
-                        ?>
-                    </div>
-                <?php endif; ?>
             <?php else: ?>
                 <div class="alert alert-info"><?php esc_html_e('No resolved or closed tickets found.', 'helppress-tickets'); ?></div>
             <?php endif; ?>
