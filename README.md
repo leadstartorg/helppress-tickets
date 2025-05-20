@@ -102,7 +102,7 @@ This plugin is licensed under the GPL v2 or later.
 
 ## Credits
 
-Developed by Jessica Kafor and Claude AI
+Developed by Jessica and Claude AI
 
 ## Changelog
 
