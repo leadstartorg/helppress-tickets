@@ -47,7 +47,8 @@
         // File upload validation
         $('input[type="file"]').on('change', function() {
             var fileInput = $(this);
-            var maxSize = 1 * 1024 * 1024; // 1MB
+            //var maxSize = 1 * 1024 * 1024; // 1MB
+            var maxSize = 2 * 1024 * 1024 * 1024; // 2GB
             var allowedTypes = ['image/jpeg', 'image/jpg', 'image/png', 'application/pdf', 'application/zip'];
             
             if (fileInput[0].files.length > 0) {
